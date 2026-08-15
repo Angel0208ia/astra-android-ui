@@ -1,4 +1,4 @@
-# LoginApp
+# Actividad 1 (LoginApp)
 
 Aplicación básica desarrollada en Android Studio con Kotlin y Jetpack Compose.
 
