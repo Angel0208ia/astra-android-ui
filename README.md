@@ -1,55 +1,42 @@
-# Astra
+# Astra — Android UI Prototype
 
-**Astra** es una aplicación móvil desarrollada como parte de la materia de **Desarrollo de Aplicaciones Móviles**. El objetivo del proyecto es practicar la creación de interfaces y la navegación entre diferentes pantallas utilizando Android Studio, Kotlin y Jetpack Compose.
+A two-screen Android prototype for practicing login and registration layouts and navigation.
 
-## Funcionalidades
+## Technologies
 
-La aplicación cuenta actualmente con:
+Kotlin, Jetpack Compose, Material 3, Android Studio and Gradle, Navigation Compose.
 
-* Pantalla de inicio de sesión.
-* Pantalla de registro.
-* Campos para ingresar información del usuario.
-* Navegación entre inicio de sesión y registro.
-* Logo e identidad visual propia de Astra.
-* Interfaz sencilla y fácil de utilizar.
+## Features
 
-En esta primera versión no se realiza almacenamiento de usuarios ni autenticación real.
+- Login form with email and masked password fields.
+- Registration form with name, email and masked password fields.
+- Navigation between login and registration.
+- Astra visual identity.
 
-## Tecnologías utilizadas
+## Installation and execution
 
-* Android Studio
-* Kotlin
-* Jetpack Compose
-* Material Design 3
-* Navigation Compose
-* Git
-* GitHub
+```bash
+git clone https://github.com/Angel0208ia/astra-android-ui.git
+cd astra-android-ui
+```
 
-## Requisitos
+Open **`Actividad 1/`**, not the repository root, in Android Studio. Install the SDK requested by Gradle (compile/target API 37) and allow dependency synchronization. The app supports Android API 24 and above. The checked-in Gradle daemon configuration requests JDK 25; Java source compatibility is 11. Use the wrapper and project toolchain rather than an arbitrary system Gradle version.
 
-Para ejecutar el proyecto se necesita:
+Run the `app` configuration on an emulator or device. To build on Windows from the Android project folder:
 
-* Android Studio.
-* Android SDK instalado.
-* API 24 o superior.
-* Emulador Android o dispositivo físico.
+```powershell
+.\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:testDebugUnitTest
+```
 
-## Ejecución del proyecto
+The debug APK is generated under `app/build/outputs/apk/debug/`.
 
-1. Clonar o descargar este repositorio.
-2. Abrir el proyecto en Android Studio.
-3. Esperar a que Gradle termine de sincronizar.
-4. Seleccionar un emulador o dispositivo Android.
-5. Ejecutar la aplicación.
+## Scope and limitations
 
-## Integrantes
+Beginner UI project. Login has a placeholder handler; registration returns to the previous screen. No accounts are created, no credentials are validated and no user information is stored. Do not enter real passwords.
 
-* Ángel Sebastián Mota Mora
+The existing unit and instrumentation tests are template examples, not complete feature coverage. A full Android build requires Android SDK and toolchain downloads; it was not executed during the portfolio documentation audit. No application screenshots were present in the repository.
 
-## Información académica
+## Academic context
 
-**Materia:** Desarrollo de Aplicaciones Móviles
-
-**Universidad:** Universidad Tecmilenio Campus Cancún
-
-**Actividad:** 1 - Desarrollo de una aplicación móvil
+University project developed during Software Development Engineering studies. Author: Ángel Sebastián Mota Mora.

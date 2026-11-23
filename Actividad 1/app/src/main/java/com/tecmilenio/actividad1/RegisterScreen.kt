@@ -26,7 +26,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.size
 @Composable
 fun RegisterScreen(navController: NavController) {
